@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edittext_reminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Reminder" />
+
+    <EditText
+        android:id="@+id/edittext_when"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_reminder"
+        android:hint="Time" />
+
+    <Button
+        android:id="@+id/button_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_when"
+        android:layout_alignParentEnd="true"
+        android:text="Done" />
+
+</RelativeLayout>

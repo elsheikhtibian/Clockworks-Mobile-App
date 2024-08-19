@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/kanban"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KanbanActivity">
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="746dp"
+        android:layout_marginBottom="1dp"
+        android:background="#6454a4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="102dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/nav_board_real"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/toTimer"
+                android:layout_width="96dp"
+                android:layout_height="85dp"
+                android:layout_centerInParent="true"
+                android:text="Pomodoro\nTimer"
+                android:textSize="18dp"
+                app:cornerRadius="0dp"
+                android:padding="0dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="103dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/nav_board_chosen"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Kanban\nBoard"
+                android:textColor="@android:color/white"
+                android:textSize="17sp"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="103dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/nav_board_real"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/toReminders"
+                android:layout_width="96dp"
+                android:layout_height="85dp"
+                android:layout_centerInParent="true"
+                android:text="Reminders"
+                android:textSize="18dp"
+                app:cornerRadius="0dp"
+                android:padding="0dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="103dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/nav_board_real"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/toMotivation"
+                android:layout_width="96dp"
+                android:layout_height="85dp"
+                android:layout_centerInParent="true"
+                android:text="Motivation"
+                android:textSize="18dp"
+                app:cornerRadius="0dp"
+                android:padding="0dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/toDoUnderline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="317dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="478dp"
+        android:text="-------------------------------------"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="293dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginBottom="502dp"
+        android:text="To    Do"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/toggleAddOverlay"
+        android:layout_width="106dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="254dp"
+        android:layout_marginTop="285dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="504dp"
+        android:text="+"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/inProgressUnderline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="745dp"
+        android:text="-------------------------------------"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/toggleFinishOverlay"
+        android:layout_width="343dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="605dp"
+        android:text=""
+        android:textSize="25dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="381dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="365dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="96dp"
+        android:orientation="vertical"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="127dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="136dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/task1"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerInParent="true"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:padding="8dp"
+                    android:text=""
+                    android:visibility="invisible"
+                    app:cornerRadius="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/task2"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerInParent="true"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:padding="8dp"
+                    android:text=""
+                    android:visibility="invisible"
+                    app:cornerRadius="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="136dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/task3"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerInParent="true"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:padding="8dp"
+                    android:text=""
+                    android:visibility="invisible"
+                    app:cornerRadius="20dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="127dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="136dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/task4"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerInParent="true"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:padding="8dp"
+                    android:text=""
+                    android:visibility="invisible"
+                    app:cornerRadius="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/task5"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerInParent="true"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:padding="8dp"
+                    android:text=""
+                    android:visibility="invisible"
+                    app:cornerRadius="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="136dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/task6"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerInParent="true"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:padding="8dp"
+                    android:text=""
+                    android:visibility="invisible"
+                    app:cornerRadius="20dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="127dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="136dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/task7"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerInParent="true"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:padding="8dp"
+                    android:text=""
+                    android:visibility="invisible"
+                    app:cornerRadius="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/task8"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerInParent="true"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:padding="8dp"
+                    android:text=""
+                    android:visibility="invisible"
+                    app:cornerRadius="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="136dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/task9"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerInParent="true"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:padding="8dp"
+                    android:text=""
+                    android:visibility="invisible"
+                    app:cornerRadius="20dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="767dp"
+        android:text="In    Progress"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

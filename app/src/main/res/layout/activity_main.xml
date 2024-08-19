@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/button_new_reminder"
+        android:layout_width="268dp"
+        android:layout_height="104dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="500dp"
+        android:text="New Reminder"
+        android:textColor="#000000"
+        android:textSize="37sp"
+    />
+
+    <Button
+        android:id="@+id/button_plus"
+        android:layout_width="186dp"
+        android:layout_height="184dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/circular_button_plus"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="#000000"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/button_my_reminders"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="194dp"
+        android:background="@drawable/button_background"
+        android:text="My Reminders"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="95dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="746dp"
+        android:background="#6454a4"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="102dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/nav_board_real"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/toTimer"
+                android:layout_width="96dp"
+                android:layout_height="85dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/purple_square"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:padding="0dp"
+                android:text="Pomodoro\nTimer"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                app:cornerRadius="0dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="103dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/nav_board_real"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/toKanban"
+                android:layout_width="96dp"
+                android:layout_height="85dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/purple_square"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:padding="0dp"
+                android:text="Kanban\nBoard"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                app:cornerRadius="0dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="103dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/nav_board_chosen"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Reminders"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="103dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/nav_board_real"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/toMotivation"
+                android:layout_width="96dp"
+                android:layout_height="85dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/purple_square"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:padding="0dp"
+                android:text="Motivation"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                app:cornerRadius="0dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

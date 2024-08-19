@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Clockworks</string>
+    <string name="today">Today</string>
+    <string name="this_week">This Week</string>
+    <string name="add_reminder">Add Reminder</string>
+    <string name="reminder_name">Reminder Name</string>
+    <string name="deadline">Deadline (MM/DD/YYYY)</string>
+    <string name="add">Add</string>
+    <string name="back">Back</string>
+</resources>

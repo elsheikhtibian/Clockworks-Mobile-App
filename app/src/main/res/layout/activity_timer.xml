@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimerActivity">
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="746dp"
+        android:layout_marginBottom="0dp"
+        android:background="#6454a4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="102dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/nav_board_chosen"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Pomodoro\nTimer"
+                android:textColor="@android:color/white"
+                android:textSize="17sp"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="103dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/nav_board_real"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/toKanban"
+                android:layout_width="96dp"
+                android:layout_height="85dp"
+                android:layout_centerInParent="true"
+                android:text="Kanban\nBoard"
+                android:textSize="18dp"
+                app:cornerRadius="0dp"
+                android:padding="0dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="103dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/nav_board_real"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/toReminders"
+                android:layout_width="96dp"
+                android:layout_height="85dp"
+                android:layout_centerInParent="true"
+                android:text="Reminders"
+                android:textSize="18dp"
+                app:cornerRadius="0dp"
+                android:padding="0dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="103dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/nav_board_real"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/toMotivation"
+                android:layout_width="96dp"
+                android:layout_height="85dp"
+                android:layout_centerInParent="true"
+                android:text="Motivation"
+                android:textSize="18dp"
+                app:cornerRadius="0dp"
+                android:padding="0dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp"/> />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="22dp"
+
+        android:text="Reset"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startButton" />
+    <!-- Add this button after the resetButton in your XML file -->
+    <Button
+        android:id="@+id/pauseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="22dp"
+        android:text="Pause"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resetButton" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="22dp"
+
+        android:text="Start"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timerText" />
+
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25:00"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.371" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Time to work!"
+        android:textColor="#666666"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/timerText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
